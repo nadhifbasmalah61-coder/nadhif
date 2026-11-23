@@ -86,6 +86,14 @@ section.row > h2 { font-family: var(--font-display); font-size: 13px; text-trans
 .entries .d { grid-row: 1; grid-column: 2; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .entries .now { color: var(--accent); font-weight: 600; }
 
+.projects { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.projects > li { padding-block: 20px; border-top: 1px solid var(--line); }
+.projects > li:first-child { border-top: 0; padding-top: 0; }
+.projects h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; }
+.projects p { margin: 0 0 12px; max-width: 40em; color: var(--muted); font-size: 15px; }
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tags li { padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; letter-spacing: .02em; color: var(--fg); }
+
 .skills { display: grid; gap: 24px; }
 .skills h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 500; margin: 0 0 10px; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -124,6 +132,7 @@ footer { padding-block: 32px 48px; font-size: 13px; color: var(--muted); display
     <nav aria-label="Navigasi halaman">
       <a href="#tentang">Tentang</a>
       <a href="#pengalaman">Pengalaman</a>
+      <a href="#proyek">Proyek</a>
       <a href="#prestasi">Prestasi</a>
       <a href="#kontak">Kontak</a>
     </nav>
@@ -158,6 +167,7 @@ footer { padding-block: 32px 48px; font-size: 13px; color: var(--muted); display
       <div class="body">
         <p>Saya lulusan SMK Full Day Bustanul Ulum, di bawah naungan Pondok Pesantren Bustanul Ulum Bulugading, dan kini kuliah di Teknik Komputer, Politeknik Negeri Jember.</p>
         <p>Saya punya semangat belajar yang tinggi, mudah menyesuaikan diri, dan nyaman berkomunikasi. Saya aktif di organisasi sekolah maupun pesantren, dan siap belajar serta bekerja sama, baik dalam tim maupun sendiri.</p>
+        <p>Di kampus, saya menjabat Sekretaris Angkatan, menjadi pengurus UKMO, dan ikut UKM Olahraga divisi MMA.</p>
       </div>
     </section>
 
@@ -186,6 +196,21 @@ footer { padding-block: 32px 48px; font-size: 13px; color: var(--muted); display
       <h2>Pengalaman</h2>
       <ul class="entries">
         <li>
+          <span class="t">Sekretaris Angkatan</span>
+          <span class="d now">Sekarang</span>
+          <span class="s">Politeknik Negeri Jember</span>
+        </li>
+        <li>
+          <span class="t">Pengurus UKMO</span>
+          <span class="d now">Sekarang</span>
+          <span class="s">Politeknik Negeri Jember</span>
+        </li>
+        <li>
+          <span class="t">Anggota UKM Olahraga, divisi MMA</span>
+          <span class="d now">Sekarang</span>
+          <span class="s">Politeknik Negeri Jember</span>
+        </li>
+        <li>
           <span class="t">Tenaga pengajar</span>
           <span class="d now">2025 – sekarang</span>
           <span class="s">Pondok pesantren</span>
@@ -204,6 +229,32 @@ footer { padding-block: 32px 48px; font-size: 13px; color: var(--muted); display
           <span class="t">Ketua OSIS</span>
           <span class="d">2023 – 2024</span>
           <span class="s">SMK Bustanul Ulum</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="row" id="proyek">
+      <h2>Proyek</h2>
+      <ul class="projects">
+        <li>
+          <h3>Kontrol dan Monitor Sensor Aktuator</h3>
+          <p>Aplikasi desktop dengan antarmuka grafis untuk mengontrol dan memantau papan Wemos lewat komunikasi serial. Dibuat pada Case Project dan Deployment, BKPM Workshop Pemrograman Dasar.</p>
+          <ul class="tags"><li>C++</li><li>Qt Creator</li><li>Wemos</li><li>Serial</li></ul>
+        </li>
+        <li>
+          <h3>Lampu Lalu Lintas 3 Arah</h3>
+          <p>Simulasi pengatur lampu lalu lintas untuk tiga arah di simulator Wokwi, memakai Arduino Uno dan beberapa pin digital untuk lampu tiap arah.</p>
+          <ul class="tags"><li>Arduino Uno</li><li>Wokwi</li><li>C++</li></ul>
+        </li>
+        <li>
+          <h3>Program Perhitungan Balok</h3>
+          <p>Program berfungsi untuk menghitung diagonal ruang dan diagonal bidang balok, besar sudut, serta jarak titik ke garis. Kode disusun dengan fungsi, dekomposisi, dan dokumentasi.</p>
+          <ul class="tags"><li>C++</li><li>Matematika Teknik</li></ul>
+        </li>
+        <li>
+          <h3>Fungsi Integral dan Diferensial</h3>
+          <p>Kode C++ berbasis fungsi untuk menghitung persamaan integral dan diferensial, lengkap dengan laporan praktikum.</p>
+          <ul class="tags"><li>C++</li><li>Laporan praktikum</li></ul>
         </li>
       </ul>
     </section>
